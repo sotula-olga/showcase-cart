@@ -1,7 +1,8 @@
 import { Outlet } from 'react-router-dom'
+
 import './Layout.css'
 
-const Layout = () => {
+function Layout(){
   return (
     <div className='layout'>
       <Outlet/>

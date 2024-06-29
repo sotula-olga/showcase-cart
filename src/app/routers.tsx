@@ -22,7 +22,7 @@ export const routers: RouteObject[] = [
         path: "cart",
         Component: Cart
       },
-    
+
     ]
   },
   {
