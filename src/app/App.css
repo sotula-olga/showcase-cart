@@ -1,0 +1,49 @@
+:root
+{
+  /*--------- shared colors ------*/
+  --accent-color: #2AA803;
+  --background-accent-color: #57CE32;
+
+  /*--------- text colors ---------*/
+  --primary-text-color: #2B2B2B;
+  --ghost-text-color: #949494;
+
+  /*--------- background colors -------------*/
+  --primary-background-color: #f8f8f8;
+
+  /*--------- border colors ----------------*/
+  --ghost-border-color: #E1E1E1;
+
+  --black-text-main: #2b2b2b;
+  --gray-text: #949494;
+  --stroke-gray-default: #d8d8d8;
+  --button: #36ba5f;
+  --error: #e26c63;
+  --bg: #f8f8f8;
+  --podskazki-inputov: #656565;
+  --green-text: #2aa803;
+  --sidebar-bg: #f9f9f9;
+  --kontur-saydbara: #e1e1e1;
+  --orange: #ffac44;
+  --white: #fff;
+  --containers-gray: #ecebeb;
+  --tasty-green: #57ce32;
+  --error-text: #ce392e;
+  --color: #fff;
+  --orange-hover: #fec378;
+  --table-header: rgba(42, 168, 3, 0.2);
+  --notification-hover: #ebf8ff;
+  --cart-list: #f8f8f8;
+  --left-branch-bg: #fff1e0;
+  --cart-pop-up: #ffe500;
+  --levaya-vetka: #fd2fd0;
+  --pravaya-vetka: #2f8efd;
+}
+
+.app
+{
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  font-family: "Ubuntu", "Arial", sans-serif;
+}

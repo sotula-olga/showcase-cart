@@ -1,0 +1,43 @@
+@import url("./assets/fonts/fonts.css");
+
+*
+{
+  box-sizing: border-box;
+}
+
+body,
+section,
+div,
+form,
+ul,
+h1,
+h2,
+h3,
+p,
+button,
+img,
+span
+{
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+p
+{
+  cursor: default;
+  user-select: none;
+}
+
+ul
+{
+  list-style: none;
+}
+
+.link
+{
+  text-decoration: none;
+  cursor: pointer;
+}
