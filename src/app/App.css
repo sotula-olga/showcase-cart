@@ -1,8 +1,9 @@
 :root
 {
   /*--------- shared colors ------*/
-  --accent-color: #2AA803;
+  --accent-color: #64F77C;
   --background-accent-color: #57CE32;
+  --ghost-color: #D8D8D8;
 
   /*--------- text colors ---------*/
   --primary-text-color: #2B2B2B;

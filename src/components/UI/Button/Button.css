@@ -1,0 +1,38 @@
+.button {
+  padding: 7px 16px;
+  min-width: 100px;
+  border: none;
+  border-radius: 32px;
+  color: var(--primary-text-color);
+  align-items: center;
+  font-weight: 700;
+  font-size: 16px;
+  transition: linear 300ms background-color;
+}
+
+.button:not(:disabled):hover
+{
+  cursor: pointer;
+  opacity: .5;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button:focus-visible {
+  outline: 1px solid var(--primary-text-color);
+}
+
+.button:disabled
+{
+  background-color: var(--ghost-color);
+}
+
+
+.button_contained
+{
+  background-color: var(--accent-color);
+}
+
+

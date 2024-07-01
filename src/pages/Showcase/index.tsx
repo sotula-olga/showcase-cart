@@ -5,11 +5,15 @@ import ProductCard from "../../components/ProductCard";
 import './Showcase.css'
 import { useLayoutEffect } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
+import { ICartItem } from "../../store/cart/types";
+import { TCartState } from "../../store/cart/cartSlice";
 
 function Showcase(){
   const navigation = useNavigate();
   const location = useLocation();
   const products: IProduct[] = useSelector((state: any) => state.products.products);
+  const cart: TCartState = useSelector((state: any) => state.cart);
+
 
   //effects
   useLayoutEffect(() => {
@@ -24,7 +28,11 @@ function Showcase(){
       <ul className="show-case">
         {products.map((product: IProduct, index) => (
           <li key={index}>
-            <ProductCard variant="SHOW-CASE" product={product} quantity={0}/>
+            <ProductCard
+              variant="SHOW-CASE"
+              product={product}
+              quantity={cart.items.find((item:ICartItem) => item.productId === product.id)?.quantity || 0}
+            />
 
           </li>
         ))}

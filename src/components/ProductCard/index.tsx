@@ -1,6 +1,10 @@
 import { IProduct } from '../../store/products/types';
-import productImage from '../../assets/images/product.jpg';
+import noPhoto from '../../assets/images/no-photo.jpg';
+import ProductPrice from './ProductPrice';
 import './ProductCard.css';
+import ProductName from './ProductName';
+import AddToCart from './AddToCart';
+import classNames from 'classnames';
 
 interface TProps {
   variant: "CART" | "SHOW-CASE",
@@ -9,35 +13,41 @@ interface TProps {
 };
 
 function ProductCard ({ variant, product, quantity }: TProps){
-  const {name, price} = product
+  const { id, name, price, imageUrl, availableQuantity } = product
   return (
-    <div className="product-card">
-      <img className="product-card__img" src={productImage} alt={name} />
-      <span className="product-card__name">{name}</span>
-      <span className="product-card__price">{price}&#8381;</span>
+    <div className={classNames("product-card", "product-card_" + variant.toLowerCase()) }>
+      <img className="product-card__img" src={imageUrl || noPhoto} alt={name} />
+      <ProductName>
+        {name}
+      </ProductName>
+      <ProductPrice>
+        {price}
+      </ProductPrice>
 
-   {/*{quantity ?
+    {quantity ?
       (
-        <ModifyCart
-          count = {quantity}
-          maxCount = {maxCount}
-          incrementCount={() => changeCount(order_item_id, quantity + 1)}
-          decrementCount = {() => changeCount(order_item_id, quantity -1)}
-          loading = {loading}
-        />
+        null
+
       )
       :
       (
         <AddToCart
-          sx = {{}}
-          onClick={() => addToCart(id)}
-          loading = {loading}
+          id = {id}
         />
       )
-    }*/}
+    }
   </div>
   )
 };
 
 export default ProductCard;
 
+/**
+ <ModifyCart
+          count = {quantity}
+          maxCount = {maxCount}
+          incrementCount={() => changeCount(order_item_id, quantity + 1)}
+          decrementCount = {() => changeCount(order_item_id, quantity -1)}
+          loading = {loading}
+        />
+ */

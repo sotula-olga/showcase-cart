@@ -1,11 +1,19 @@
 .product-card
 {
   display: flex;
+  padding: 16px;
+  border-radius: 20px;
+}
+
+.product-card:hover {
+  cursor: pointer;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.product-card_show-case
+{
   flex-direction: column;
   gap: 10px;
-  padding: 16px;
-  border: 1px solid var(--stroke-gray-default);
-  border-radius: 20px;
 }
 
 .product-card__info-wrapper
@@ -24,15 +32,4 @@
   border-radius: 12px;
 }
 
-.product-card__name
-{
-  font-weight: 400;
-  font-size: 18px;
-  height: 40px;
-}
 
-.product-card__price
-{
-  font-weight: 800;
-  font-size: 22px;
-}
