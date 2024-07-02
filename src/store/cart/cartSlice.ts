@@ -18,14 +18,21 @@ const cartSlice = createSlice({
       console.log(state);
       console.log(action);
       state.items.push(  {
-          quantity: 1,
-          productId: action.payload.id,
-
-        })
-  },
+        quantity: 1,
+        productId: action.payload.id,
+      })
+    },
+    modifyItem(state, action) {
+      const modifyedItem = state.items.find(item => item.productId === action.payload.id);
+      if (modifyedItem)
+        modifyedItem.quantity = action.payload.quantity;
+    },
+    removeItem(state, action) {
+      state.items = state.items.filter(item => item.productId !== action.payload.id);
+    }
   }
 })
 
-export const { addItem } = cartSlice.actions;
+export const { addItem, modifyItem, removeItem } = cartSlice.actions;
 export const cartReducer = cartSlice.reducer;
 

@@ -61,7 +61,7 @@ export const products: IProduct[] = [
     "description": "Электронная книга с высоким разрешением экрана и подсветкой",
     "price": 12990,
     "category": "Электронные книги",
-    "availableQuantity": 20,
+    "availableQuantity": 2,
     "imageUrl": "https://media.istockphoto.com/id/2122580580/photo/woman-with-long-hair-working-on-vacation.webp?b=1&s=170667a&w=0&k=20&c=KKRMNklMYYOoYH1fAM-q38T7-4Wfsuix0LyUHHbkT18="
   }
 ]

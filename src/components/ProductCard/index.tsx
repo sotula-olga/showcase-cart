@@ -5,6 +5,7 @@ import './ProductCard.css';
 import ProductName from './ProductName';
 import AddToCart from './AddToCart';
 import classNames from 'classnames';
+import ModifyCart from './ModifyCart';
 
 interface TProps {
   variant: "CART" | "SHOW-CASE",
@@ -26,7 +27,12 @@ function ProductCard ({ variant, product, quantity }: TProps){
 
     {quantity ?
       (
-        null
+        <ModifyCart
+          id = {id}
+          quantity = {quantity}
+          availableQuantity = {availableQuantity}
+
+        />
 
       )
       :
@@ -42,12 +48,3 @@ function ProductCard ({ variant, product, quantity }: TProps){
 
 export default ProductCard;
 
-/**
- <ModifyCart
-          count = {quantity}
-          maxCount = {maxCount}
-          incrementCount={() => changeCount(order_item_id, quantity + 1)}
-          decrementCount = {() => changeCount(order_item_id, quantity -1)}
-          loading = {loading}
-        />
- */

@@ -1,5 +1,5 @@
 .button {
-  padding: 7px 16px;
+  padding: 11px 16px;
   min-width: 100px;
   border: none;
   border-radius: 32px;
@@ -7,7 +7,6 @@
   align-items: center;
   font-weight: 700;
   font-size: 16px;
-  transition: linear 300ms background-color;
 }
 
 .button:not(:disabled):hover

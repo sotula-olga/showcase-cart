@@ -12,6 +12,7 @@ function Button ( { variant, children, ...props }: IProps) {
   // MARK: Render
   return (
     <button
+      type = 'button'
       className = {classNames("button", "button_" + variant.toLowerCase())}
       {...props}
     >
