@@ -1,0 +1,16 @@
+.showcase {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 250px);
+  justify-content: center;
+  gap: 16px;
+  padding-bottom: 48px;
+}
+
+.showcase__nav-to-cart-wrapper {
+  margin-left: auto;
+  padding: 6px 16px;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 36px;
+}

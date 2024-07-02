@@ -1,0 +1,19 @@
+:root {
+  /*--------- shared colors ------*/
+  --accent-color: #64F77C;
+  --ghost-color: #D8D8D8;
+
+  /*--------- text colors ---------*/
+  --primary-text-color: #2B2B2B;
+
+  /*--------- background colors -------------*/
+  --primary-background-color:white;
+  --secondary-background-color: #e2e2e2;
+}
+
+.app {
+  width: 100vw;
+  min-height: 100vh;
+  overflow: hidden;
+  font-family: "Ubuntu", "Arial", sans-serif;
+}
