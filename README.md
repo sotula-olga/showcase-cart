@@ -7,11 +7,10 @@ SPA application. Тестовый 2-х страничный проект в об
 - просматривать содержимое корзины
 
 ## Tech Stack
-
-![HTML](https://simpleicons.org/icons/html5.svg)&nbsp;
-![CSS](https://simpleicons.org/icons/css3.svg)&nbsp;
-![TypeScript](https://simpleicons.org/icons/typescript.svg)&nbsp;
-![React]https://simpleicons.org/icons/createreactapp.svg)&nbsp;
+- HTML
+- CSS
+- TypeScript
+- React
 
 ## Available Scripts
 ### `npm run dev`
