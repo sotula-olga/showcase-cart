@@ -6,43 +6,57 @@ import ProductName from './ProductName';
 import AddToCart from './AddToCart';
 import classNames from 'classnames';
 import ModifyCart from './ModifyCart';
+import IconButton from '../UI/IconButton';
+import { BsTrash } from 'react-icons/bs';
+import RemoveFromCart from './RemoveFromCart';
 
 interface TProps {
-  variant: "CART" | "SHOW-CASE",
+  variant: "CART" | "SHOWCASE",
   product: IProduct,
   quantity: number
 };
 
 function ProductCard ({ variant, product, quantity }: TProps){
-  const { id, name, price, imageUrl, availableQuantity } = product
+  const { id, name, price, imageUrl, availableQuantity } = product;
+
   return (
-    <div className={classNames("product-card", "product-card_" + variant.toLowerCase()) }>
-      <img className="product-card__img" src={imageUrl || noPhoto} alt={name} />
-      <ProductName>
-        {name}
-      </ProductName>
-      <ProductPrice>
-        {price}
-      </ProductPrice>
+    <div
+      className={classNames("product-card", "product-card_" + variant.toLowerCase())}
+    >
+      <img
+        className={classNames("product-card__img", "product-card__img_" + variant.toLowerCase())}
+        src={imageUrl || noPhoto} alt={name}
+      />
+      <div className="product-card__info">
+        <ProductName>
+          {name}
+        </ProductName>
+        <ProductPrice>
+          {price}
+        </ProductPrice>
+      </div>
+      {quantity ?
+        (
+          <ModifyCart
+            id = {id}
+            quantity = {quantity}
+            availableQuantity = {availableQuantity}
 
-    {quantity ?
-      (
-        <ModifyCart
-          id = {id}
-          quantity = {quantity}
-          availableQuantity = {availableQuantity}
+          />
 
-        />
-
-      )
-      :
-      (
-        <AddToCart
-          id = {id}
-        />
-      )
-    }
-  </div>
+        )
+        :
+        (
+          <AddToCart
+            id = {id}
+            price={price}
+          />
+        )
+      }
+      {variant === "CART" &&
+        <RemoveFromCart id = {id}/>
+      }
+    </div>
   )
 };
 

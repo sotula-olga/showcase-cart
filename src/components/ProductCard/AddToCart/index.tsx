@@ -1,17 +1,17 @@
-import { ReactNode } from "react"
 import Button from "../../UI/Button"
 import { useDispatch } from "react-redux";
 import { addItem } from "../../../store/cart/cartSlice";
 
 interface IProps {
-  id: number
+  id: number,
+  price: number
 }
 
-const AddToCart = ({  id }:IProps) => {
+const AddToCart = ({  id, price }:IProps) => {
   const dispatch = useDispatch();
   const addProduct = () => {
     console.log('AddProduct')
-    dispatch(addItem({id}));
+    dispatch(addItem({id, price}));
   }
 
   return (

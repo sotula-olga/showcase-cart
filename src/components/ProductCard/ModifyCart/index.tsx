@@ -1,8 +1,9 @@
-import { BsDashCircle, BsPlusCircle, BsTrash } from "react-icons/bs";
+import { BsDashCircle, BsPlusCircle } from "react-icons/bs";
 import IconButton from '../../UI/IconButton';
 import './ModifyCard.css';
 import { useDispatch } from "react-redux";
-import { modifyItem, removeItem } from "../../../store/cart/cartSlice";
+import { modifyItem } from "../../../store/cart/cartSlice";
+import RemoveFromCart from "../RemoveFromCart";
 
 interface IProps {
   id: number,
@@ -17,17 +18,10 @@ const ModifyCart = ({  id, quantity, availableQuantity }:IProps) => {
     dispatch(modifyItem({id, quantity}));
   }
 
-  const removeProduct = () => {
-    dispatch(removeItem({id}));
-  }
-
   return (
     <div className="modify-card">
       {quantity === 1 ?
-      <IconButton
-        onClick={() => removeProduct()}>
-        <BsTrash size="24px"/>
-      </IconButton>
+      <RemoveFromCart id = {id}/>
       :
       <IconButton
         onClick={() => modifyProduct(quantity - 1)}>

@@ -7,7 +7,7 @@ interface TProps {
 function ProductPrice ({ children }: TProps){
   return (
     <span className="product-price">
-      {children}&#8381;
+      {children} ₽
     </span>
   )
 };

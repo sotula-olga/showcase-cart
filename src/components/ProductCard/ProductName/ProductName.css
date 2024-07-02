@@ -1,5 +1,6 @@
 .product-name
 {
+  display: block;
   font-weight: 400;
   font-size: 18px;
   height: 40px;

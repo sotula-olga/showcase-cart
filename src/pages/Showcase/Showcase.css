@@ -1,5 +1,4 @@
-.show-case
-{
+.showcase {
   display: grid;
   grid-template-columns: repeat(auto-fill, 250px);
   justify-content: center;
@@ -7,23 +6,11 @@
   padding-bottom: 48px;
 }
 
-.show-case__nav-to-cart-wrapper
-{
-  width: fit-content;
+.showcase__nav-to-cart-wrapper {
   margin-left: auto;
-  margin-right: -17px;
-
-  position: sticky;
-  bottom: 50px;
-  right: 0px;
-
-  padding: 20px;
-
-  background-color: var(--cart-pop-up);
-  box-shadow: 0 1px 7px 0 rgba(188, 188, 188, 0.15);
-  border-radius: 30px;
-
+  padding: 6px 16px;
+  width: fit-content;
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 36px;
 }

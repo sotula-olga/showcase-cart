@@ -4,7 +4,7 @@ import './Box.css';
 import classNames from "classnames";
 
 interface IProps {
-  className: string
+  className?: string
   children?: ReactNode
 }
 

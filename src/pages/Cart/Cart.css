@@ -1,7 +1,6 @@
-.cart-list
+.cart
 {
-  margin-top: 20px;
-
+  margin: 20px 0;
   display: flex;
   flex-direction: column;
   gap: 10px;
