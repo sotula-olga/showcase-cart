@@ -1,9 +1,10 @@
-import { BsDashCircle, BsPlusCircle } from "react-icons/bs";
+import { useDispatch } from 'react-redux';
+import { modifyItem } from '../../../store/cart/cartSlice';
+import { BsDashCircle, BsPlusCircle } from 'react-icons/bs';
 import IconButton from '../../UI/IconButton';
+import RemoveFromCart from '../RemoveFromCart';
+
 import './ModifyCard.css';
-import { useDispatch } from "react-redux";
-import { modifyItem } from "../../../store/cart/cartSlice";
-import RemoveFromCart from "../RemoveFromCart";
 
 interface IProps {
   id: number,

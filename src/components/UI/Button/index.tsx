@@ -1,5 +1,5 @@
-import classNames from "classnames";
-import { ReactNode } from "react";
+import { ReactNode } from 'react';
+import classNames from 'classnames';
 
 import './Button.css';
 

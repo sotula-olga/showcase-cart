@@ -1,15 +1,16 @@
-import { useSelector } from "react-redux";
-import Page from "../../components/UI/Page";
-import { IProduct } from "../../store/products/types";
-import ProductCard from "../../components/ProductCard";
+import { useLayoutEffect } from 'react';
+import { useLocation, useNavigate } from 'react-router-dom';
+import { useSelector } from 'react-redux';
+import { IProduct } from '../../store/products/types';
+import { ICartItem } from '../../store/cart/types';
+import { TCartState } from '../../store/cart/cartSlice';
+import Page from '../../components/UI/Page';
+import Box from '../../components/UI/Box';
+import LinkButton from '../../components/UI/LinkButton';
+import ProductCard from '../../components/ProductCard';
+import CartTotal from '../../components/CartTotal';
+
 import './Showcase.css'
-import { useLayoutEffect } from "react";
-import { useLocation, useNavigate } from "react-router-dom";
-import { ICartItem } from "../../store/cart/types";
-import { TCartState } from "../../store/cart/cartSlice";
-import Box from "../../components/UI/Box";
-import CartTotal from "../../components/CartTotal";
-import LinkButton from "../../components/UI/LinkButton";
 
 function Showcase(){
   const navigation = useNavigate();

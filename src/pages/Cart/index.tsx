@@ -1,15 +1,16 @@
-import { useSelector } from "react-redux";
-import Page from "../../components/UI/Page";
+import { useLayoutEffect } from 'react';
+import { useLocation, useNavigate } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 import { IProduct } from "../../store/products/types";
-import ProductCard from "../../components/ProductCard";
+import { ICartItem } from '../../store/cart/types';
+import { TCartState } from '../../store/cart/cartSlice';
+import Page from '../../components/UI/Page';
+import H2 from '../../components/UI/H2';
+import ProductCard from '../../components/ProductCard';
+import CartTotal from '../../components/CartTotal';
+
 import './Cart.css'
-import { useLayoutEffect } from "react";
-import { useLocation, useNavigate } from "react-router-dom";
-import { ICartItem } from "../../store/cart/types";
-import { TCartState } from "../../store/cart/cartSlice";
-import Box from "../../components/UI/Box";
-import CartTotal from "../../components/CartTotal";
-import LinkButton from "../../components/UI/LinkButton";
+
 
 function Cart(){
   const navigation = useNavigate();
@@ -38,7 +39,6 @@ function Cart(){
                   product={product}
                   quantity={item.quantity}
                 />
-
               </li>
             )
           } else
@@ -48,9 +48,9 @@ function Cart(){
       {cart?.totalQuantity > 0 ?
         <CartTotal/>
         :
-        <h2>
+        <H2>
           Корзина пуста.
-        </h2>
+        </H2>
       }
     </Page>
   );

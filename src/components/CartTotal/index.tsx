@@ -1,5 +1,5 @@
-import { useSelector } from "react-redux";
-import { TCartState } from "../../store/cart/cartSlice";
+import { useSelector } from 'react-redux';
+import { TCartState } from '../../store/cart/cartSlice';
 
 import './CartTotal.css';
 

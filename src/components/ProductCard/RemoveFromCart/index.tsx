@@ -1,7 +1,8 @@
-import { BsTrash } from "react-icons/bs";
+import { useDispatch } from 'react-redux';
+import { removeItem } from '../../../store/cart/cartSlice';
+import { BsTrash } from 'react-icons/bs';
 import IconButton from '../../UI/IconButton';
-import { useDispatch } from "react-redux";
-import { removeItem } from "../../../store/cart/cartSlice";
+
 
 interface IProps {
   id: number,

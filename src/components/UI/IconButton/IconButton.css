@@ -9,8 +9,7 @@
   outline: none;
 }
 
-.icon-button:not(:disabled):hover
-{
+.icon-button:not(:disabled):hover {
   cursor: pointer;
   background-color: #FFF;
   opacity: .5;
@@ -24,7 +23,6 @@
   outline: 1px solid var(--primary-text-color);
 }
 
-.icon-button:disabled>
-{
+.icon-button:disabled> {
   color: var(--ghost-color);
 }

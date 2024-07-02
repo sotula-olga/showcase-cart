@@ -1,4 +1,4 @@
-import "./H2.css";
+import './H2.css';
 
 interface IProps {
   children: string
@@ -6,11 +6,11 @@ interface IProps {
 
 function H2({ children }:IProps){
   return (
-    <h1
-      className="h1"
+    <h2
+      className="h2"
     >
       {children}
-    </h1>
+    </h2>
   );
 }
 

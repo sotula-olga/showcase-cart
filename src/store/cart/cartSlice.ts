@@ -1,5 +1,5 @@
-import { createSlice } from "@reduxjs/toolkit";
-import { ICartItem } from "./types";
+import { createSlice } from '@reduxjs/toolkit';
+import { ICartItem } from './types';
 
 export type TCartState = {
   totalQuantity: number,

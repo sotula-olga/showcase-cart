@@ -1,7 +1,8 @@
-import { ReactNode } from "react";
+import { ReactNode } from 'react';
+import classNames from 'classnames';
 
 import './Box.css';
-import classNames from "classnames";
+
 
 interface IProps {
   className?: string

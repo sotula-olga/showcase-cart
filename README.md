@@ -1,30 +1,30 @@
-# React + TypeScript + Vite
+# React + TypeScript + Vite online-store
+SPA application. Тестовый 2-х страничный проект в объеме Витрина + Корзина.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Веб-приложение, в котором пользователи могут:
+- просматривать карточки продуктов
+- добавлять продукты в корзину, изменять количество, удалять продукты из корзины
+- просматривать содержимое корзины
 
-Currently, two official plugins are available:
+## Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![HTML](https://simpleicons.org/icons/html5.svg)&nbsp;
+![CSS](https://simpleicons.org/icons/css3.svg)&nbsp;
+![TypeScript](https://simpleicons.org/icons/typescript.svg)&nbsp;
+![React]https://simpleicons.org/icons/createreactapp.svg)&nbsp;
 
-## Expanding the ESLint configuration
+## Available Scripts
+### `npm run dev`
+### `npm run lint`
+### `npm run build`
+### `npm run preview`
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Features
+- загрузка списка продуктов из файла \mocks\productsData.ts
+- сохранение списка продуктов и состояния корзины в redux store
+- навигация между страницами
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## todo
+Возможные доработки:
+- подключение json-server для имитации получения данных с сервера
+- подключение mui для упрощения верстки

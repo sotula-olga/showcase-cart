@@ -1,6 +1,6 @@
-.product-price
-{
+.product-price {
   display: block;
+  font-family: 'Ubuntu';
   font-weight: 800;
   font-size: 22px;
 }

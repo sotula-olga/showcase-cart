@@ -1,4 +1,4 @@
-import { ReactNode, useState } from 'react';
+import { ReactNode } from 'react';
 import './IconButton.css';
 
 interface IProps extends React.ButtonHTMLAttributes<HTMLButtonElement>{

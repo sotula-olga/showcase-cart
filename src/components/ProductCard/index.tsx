@@ -1,14 +1,13 @@
 import { IProduct } from '../../store/products/types';
-import noPhoto from '../../assets/images/no-photo.jpg';
 import ProductPrice from './ProductPrice';
-import './ProductCard.css';
 import ProductName from './ProductName';
 import AddToCart from './AddToCart';
 import classNames from 'classnames';
 import ModifyCart from './ModifyCart';
-import IconButton from '../UI/IconButton';
-import { BsTrash } from 'react-icons/bs';
 import RemoveFromCart from './RemoveFromCart';
+import noPhoto from '../../assets/images/no-photo.jpg';
+
+import './ProductCard.css';
 
 interface TProps {
   variant: "CART" | "SHOWCASE",

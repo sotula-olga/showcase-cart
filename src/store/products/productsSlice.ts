@@ -1,6 +1,6 @@
-import { createSlice } from "@reduxjs/toolkit";
-import { IProduct } from "./types";
-import { products } from "./productsData";
+import { createSlice } from '@reduxjs/toolkit';
+import { IProduct } from './types';
+import { products } from '../../mocks/productsData';
 
 export type TProductsState = {
   products: IProduct[],

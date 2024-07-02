@@ -1,11 +1,11 @@
 import { ReactNode } from 'react';
+import Box from '../Box';
+import H1 from '../H1';
 
-import "./Page.css";
-import Box from "../Box";
-import H1 from "../H1";
+import './Page.css';
 
-interface IProps
-{
+
+interface IProps {
   title?: string,
   children?:ReactNode
 }
@@ -22,8 +22,8 @@ function Page({ title, children }: IProps)
           <H1>
             {title}
           </H1>
-        )}
-
+        )
+      }
       {children}
     </Box>
   );

@@ -5,12 +5,12 @@
   border-radius: 32px;
   color: var(--primary-text-color);
   align-items: center;
+  font-family: 'Ubuntu';
   font-weight: 700;
   font-size: 16px;
 }
 
-.button:not(:disabled):hover
-{
+.button:not(:disabled):hover {
   cursor: pointer;
   opacity: .5;
 }
@@ -23,14 +23,12 @@
   outline: 1px solid var(--primary-text-color);
 }
 
-.button:disabled
-{
+.button:disabled {
   background-color: var(--ghost-color);
 }
 
 
-.button_contained
-{
+.button_contained {
   background-color: var(--accent-color);
 }
 

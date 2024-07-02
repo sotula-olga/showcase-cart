@@ -1,7 +1,7 @@
-.h1 {
+.h2 {
   margin-bottom: 20px;
   color: var(--primary-text-color);
   font-size: 24px;
+  font-family: 'Ubuntu';
   font-weight: 700;
-  border-bottom: 1px solid var(--accent-color);
 }

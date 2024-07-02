@@ -1,6 +1,6 @@
-import Button from "../../UI/Button"
-import { useDispatch } from "react-redux";
-import { addItem } from "../../../store/cart/cartSlice";
+import { useDispatch } from 'react-redux';
+import { addItem } from '../../../store/cart/cartSlice';
+import Button from '../../UI/Button'
 
 interface IProps {
   id: number,

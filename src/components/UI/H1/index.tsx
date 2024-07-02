@@ -1,4 +1,4 @@
-import "./H1.css";
+import './H1.css';
 
 interface IProps {
   children: string

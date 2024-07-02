@@ -1,7 +1,6 @@
 @import url("./assets/fonts/fonts.css");
 
-*
-{
+* {
   box-sizing: border-box;
 }
 
@@ -16,8 +15,7 @@ h3,
 p,
 button,
 img,
-span
-{
+span {
   margin: 0;
   padding: 0;
 }
@@ -25,14 +23,18 @@ span
 h1,
 h2,
 h3,
-p
-{
+p {
   cursor: default;
   user-select: none;
 }
 
-ul
-{
+ul {
   list-style: none;
+}
+
+.link {
+  text-decoration: none;
+  cursor: pointer;
+  color: var(--primary-text-color);
 }
 
